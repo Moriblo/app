@@ -13,7 +13,7 @@ from flask_cors import CORS
 from logger import setup_logger
 
 # ======================================================================================
-""" Inicializa service_name com o nome exclusivo do serviço para fins de geração de log
+""" Inicializa service_name com o nome exclusivo do serviço para geração de log
 """ 
 # ======================================================================================
 service_name = "app"
@@ -147,8 +147,8 @@ def del_obra(query: ObraBuscaSchema):
         return {"mesage": error_msg}, 404
 
 # ========================================================================================
-""" Rota /obrart para tratar o fetch a partir do script.js para consulta obra + artista.
-    Regra de negócio para evitar tupla com obra + artista repetida
+""" Rota /obrart para tratar o fetch do script.js para consulta obra + artista.
+    2ª Regra de negócio (RN2) para evitar tupla com obra + artista repetida
 """
 # ========================================================================================
 @app.get('/obrart', methods=['GET'], tags=[obra_tag])

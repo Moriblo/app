@@ -1,55 +1,22 @@
-[2023-09-05 21:58:16,168] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2023-09-06 19:18:21,734] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:58:16,186] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:58:16,225] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:58:23,447] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:58:23,502] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:58:53,623] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:58:53] "OPTIONS /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:58:53,691] DEBUG del_obra() L131  Deletando dados sobre obra Quail and Millet e artista Kiyohara Yukinobu - call_trace=c:\env\app\app.py L131 
-[2023-09-05 21:58:53,812] DEBUG del_obra() L141  Deletada obra Quail and Millet e Kiyohara Yukinobu - call_trace=c:\env\app\app.py L141 
-[2023-09-05 21:58:53,824] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:58:53] "DELETE /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:59:02,442] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
-[2023-09-05 21:59:02,526] DEBUG get_obrart() L166  Quail and Millet, Kiyohara Yukinobu, 0 - call_trace=c:\env\app\app.py L166 
-[2023-09-05 21:59:02,536] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:59:02] "GET /obrart?obra_nome=Quail%20and%20Millet&obra_artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:59:08,360] DEBUG add_obra() L60   Adicionando obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L60  
-[2023-09-05 21:59:08,450] DEBUG add_obra() L70   Adicionada obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L70  
-[2023-09-05 21:59:08,457] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:59:08] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:59:11,459] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
-[2023-09-05 21:59:11,491] DEBUG get_obras() L113  8 obras econtradas - call_trace=c:\env\app\app.py L113 
-[2023-09-05 21:59:11,518] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:59:11] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:05:36,014] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
-[2023-09-05 22:05:36,327] DEBUG get_obras() L113  8 obras econtradas - call_trace=c:\env\app\app.py L113 
-[2023-09-05 22:05:36,369] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:05:36] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:05:56,163] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:05:56] "OPTIONS /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:05:56,246] DEBUG del_obra() L131  Deletando dados sobre obra Quail and Millet e artista Kiyohara Yukinobu - call_trace=c:\env\app\app.py L131 
-[2023-09-05 22:05:56,390] DEBUG del_obra() L141  Deletada obra Quail and Millet e Kiyohara Yukinobu - call_trace=c:\env\app\app.py L141 
-[2023-09-05 22:05:56,399] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:05:56] "DELETE /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:06:04,098] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
-[2023-09-05 22:06:04,155] DEBUG get_obrart() L166  Quail and Millet, Kiyohara Yukinobu, 0 - call_trace=c:\env\app\app.py L166 
-[2023-09-05 22:06:04,166] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:06:04] "GET /obrart?obra_nome=Quail%20and%20Millet&obra_artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:06:09,209] DEBUG add_obra() L60   Adicionando obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L60  
-[2023-09-05 22:06:09,321] DEBUG add_obra() L70   Adicionada obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L70  
-[2023-09-05 22:06:09,334] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:06:09] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:06:12,155] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
-[2023-09-05 22:06:12,177] DEBUG get_obras() L113  8 obras econtradas - call_trace=c:\env\app\app.py L113 
-[2023-09-05 22:06:12,212] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:06:12] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:08:35,207] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:08:35] "OPTIONS /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:08:35,298] DEBUG del_obra() L131  Deletando dados sobre obra Quail and Millet e artista Kiyohara Yukinobu - call_trace=c:\env\app\app.py L131 
-[2023-09-05 22:08:35,539] DEBUG del_obra() L141  Deletada obra Quail and Millet e Kiyohara Yukinobu - call_trace=c:\env\app\app.py L141 
-[2023-09-05 22:08:35,561] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:08:35] "DELETE /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:08:39,620] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:08:39] "OPTIONS /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:08:39,649] DEBUG del_obra() L131  Deletando dados sobre obra Quail and Millet e artista Kiyohara Yukinobu - call_trace=c:\env\app\app.py L131 
-[2023-09-05 22:08:39,697] WARNING del_obra() L146  Erro ao deletar obra 'Quail and Millet' e artista 'Kiyohara Yukinobu', Obra não encontrada na base :/ - call_trace=c:\env\app\app.py L146 
-[2023-09-05 22:08:39,718] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:08:39] "[33mDELETE /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:08:47,941] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
-[2023-09-05 22:08:48,026] DEBUG get_obrart() L166  Quail and Millet, Kiyohara Yukinobu, 0 - call_trace=c:\env\app\app.py L166 
-[2023-09-05 22:08:48,045] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:08:48] "GET /obrart?obra_nome=Quail%20and%20Millet&obra_artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:08:52,648] DEBUG add_obra() L60   Adicionando obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L60  
-[2023-09-05 22:08:52,712] DEBUG add_obra() L70   Adicionada obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L70  
-[2023-09-05 22:08:52,720] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:08:52] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:08:54,596] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
-[2023-09-05 22:08:54,617] DEBUG get_obras() L113  8 obras econtradas - call_trace=c:\env\app\app.py L113 
-[2023-09-05 22:08:54,637] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:08:54] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 22:10:12,366] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
-[2023-09-05 22:10:12,431] DEBUG get_obras() L113  8 obras econtradas - call_trace=c:\env\app\app.py L113 
-[2023-09-05 22:10:12,443] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 22:10:12] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:18:21,750] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:18:21,765] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:18:28,540] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:18:28,593] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:20:32,359] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
+[2023-09-06 19:20:33,702] DEBUG get_obras() L113  7 obras econtradas - call_trace=c:\env\app\app.py L113 
+[2023-09-06 19:20:33,870] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 19:20:33] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:21:15,323] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
+[2023-09-06 19:21:16,975] DEBUG get_obrart() L166  Quail and Millet, Kiyohara Yukinobu, 1 - call_trace=c:\env\app\app.py L166 
+[2023-09-06 19:21:17,082] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 19:21:17] "GET /obrart?obra_nome=Quail%20and%20Millet&obra_artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:21:27,147] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 19:21:27] "OPTIONS /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:21:27,375] DEBUG del_obra() L131  Deletando dados sobre obra Quail and Millet e artista Kiyohara Yukinobu - call_trace=c:\env\app\app.py L131 
+[2023-09-06 19:21:27,947] DEBUG del_obra() L141  Deletada obra Quail and Millet e Kiyohara Yukinobu - call_trace=c:\env\app\app.py L141 
+[2023-09-06 19:21:27,968] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 19:21:27] "DELETE /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:21:43,510] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
+[2023-09-06 19:21:43,611] DEBUG get_obrart() L166  Quail and Millet, Kiyohara Yukinobu, 0 - call_trace=c:\env\app\app.py L166 
+[2023-09-06 19:21:43,699] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 19:21:43] "GET /obrart?obra_nome=Quail%20and%20Millet&obra_artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-06 19:21:51,958] DEBUG add_obra() L60   Adicionando obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L60  
+[2023-09-06 19:21:52,190] DEBUG add_obra() L70   Adicionada obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L70  
+[2023-09-06 19:21:52,200] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 19:21:52] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
