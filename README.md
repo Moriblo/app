@@ -3,7 +3,7 @@
  Trata-se de uma API para manipulação de uma base SQLite, onde estarão armazenados os dados referentes a obras de arte (Nome, Artista, Estilo de Época, Tipo e Link). Também está sendo salvo, automaticamente na base, a data e a hora da inserção da tupla.
 
 ## Arquitetura
-Arquitetura do Projeto Obras de Arte com destaque para a API_C, que oferta o serviço de manipulação SQLita.
+Arquitetura do Projeto Obras de Arte com destaque para a API_C, que oferta o serviço de manipulação SQLite.
 
 ![API_C](https://github.com/Moriblo/app/blob/main/API_C.png)
 
