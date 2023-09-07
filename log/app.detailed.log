@@ -20,3 +20,12 @@
 [2023-09-06 19:21:51,958] DEBUG add_obra() L60   Adicionando obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L60  
 [2023-09-06 19:21:52,190] DEBUG add_obra() L70   Adicionada obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L70  
 [2023-09-06 19:21:52,200] INFO _log() L224  127.0.0.1 - - [06/Sep/2023 19:21:52] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-07 18:48:49,832] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-07 18:48:49,865] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-07 18:48:49,915] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-07 18:49:04,874] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-07 18:49:05,050] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-07 18:49:48,215] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
+[2023-09-07 18:49:48,859] DEBUG get_obras() L113  7 obras econtradas - call_trace=c:\env\app\app.py L113 
+[2023-09-07 18:49:49,034] INFO _log() L224  127.0.0.1 - - [07/Sep/2023 18:49:49] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
