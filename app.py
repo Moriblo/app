@@ -23,7 +23,7 @@ logger = setup_logger(service_name)
 """ Informações de identificação, acesso e documentação do serviço
 """
 #  =====================================================================================
-info = Info(title="API app - BD de Obras de Arte", version="1.0.1")
+info = Info(title="API Obras de Arte", version="1.0.1")
 app = OpenAPI(__name__, info=info)
 CORS(app)
 
@@ -154,12 +154,10 @@ def del_obra(query: ObraBuscaSchema):
 """
 # ========================================================================================
 @app.get('/obrart', methods=['GET'], tags=[obra_tag],
-            responses={"200": ObraDelSchema, "404": ErrorSchema})
+            responses={"200": ObrartSchema, "404": ErrorSchema})
 
-#@app.get('/obrart', methods=['GET'], tags=[obra_tag])
-#def get_obrart():
 def get_obrart(query: ObraBuscaSchema):
-    """Consulta uma obra na base de dados.
+    """Verifica  se a compinação Obra + Artista existe na base de dados.
     """
     #> obra_nome = request.args.get('obra_nome')
     #> obra_artista = request.args.get('obra_artista')
@@ -186,7 +184,6 @@ def get_obrart(query: ObraBuscaSchema):
         logger.warning(f"´{error_msg}´ '{obra_nome}' + '{obra_artista}´")
         
         return jsonify(obra_nome, obra_artista, result), 404
-        #return {"mesage": error_msg}, error_code
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)

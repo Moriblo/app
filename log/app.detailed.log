@@ -1,55 +1,49 @@
-[2023-09-14 20:04:49,821] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:04:49,836] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:04:49,845] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:04:57,217] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:04:57,233] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:06:06,024] DEBUG get_obras() L102  Coletando obras  - call_trace=c:\env\app\app.py L102 
-[2023-09-14 20:06:06,158] DEBUG get_obras() L114  1 obras econtradas - call_trace=c:\env\app\app.py L114 
-[2023-09-14 20:06:06,161] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:06:06] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:06:24,911] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
-[2023-09-14 20:06:24,947] DEBUG get_obrart() L175  Resultado da busca Grande profeta, Pablo Gargallo, 0 - call_trace=c:\env\app\app.py L175 
-[2023-09-14 20:06:24,951] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Grande profeta' + 'Pablo Gargallo´ - call_trace=c:\env\app\app.py L186 
-[2023-09-14 20:06:24,951] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:06:24] "[33mGET /obrart?nome=Grande%20profeta&artista=Pablo%20Gargallo HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:06:38,918] DEBUG add_obra() L61   Adicionando obra de nome: 'Grande profeta' e artista 'Pablo Gargallo' - call_trace=c:\env\app\app.py L61  
-[2023-09-14 20:06:39,005] DEBUG add_obra() L71   Adicionada obra de nome: 'Grande profeta' e artista 'Pablo Gargallo' - call_trace=c:\env\app\app.py L71  
-[2023-09-14 20:06:39,009] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:06:39] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:06:45,454] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:06:45] "OPTIONS /obra?nome=Grande%20profeta&artista=Pablo%20Gargallo HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:06:45,476] DEBUG del_obra() L132  Deletando dados sobre obra Grande profeta e artista Pablo Gargallo - call_trace=c:\env\app\app.py L132 
-[2023-09-14 20:06:45,530] DEBUG del_obra() L142  Deletada obra Grande profeta e Pablo Gargallo - call_trace=c:\env\app\app.py L142 
-[2023-09-14 20:06:45,536] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:06:45] "DELETE /obra?nome=Grande%20profeta&artista=Pablo%20Gargallo HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:07:22,767] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
-[2023-09-14 20:07:22,795] DEBUG get_obrart() L175  Resultado da busca Gran profeta, Pablo Gargallo, 0 - call_trace=c:\env\app\app.py L175 
-[2023-09-14 20:07:22,817] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Gran profeta' + 'Pablo Gargallo´ - call_trace=c:\env\app\app.py L186 
-[2023-09-14 20:07:22,818] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:07:22] "[33mGET /obrart?nome=Gran%20profeta&artista=Pablo%20Gargallo HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:07:53,112] DEBUG add_obra() L61   Adicionando obra de nome: 'Gran profeta' e artista 'Pablo Gargallo' - call_trace=c:\env\app\app.py L61  
-[2023-09-14 20:07:53,153] DEBUG add_obra() L71   Adicionada obra de nome: 'Gran profeta' e artista 'Pablo Gargallo' - call_trace=c:\env\app\app.py L71  
-[2023-09-14 20:07:53,166] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:07:53] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:10:45,170] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
-[2023-09-14 20:10:45,192] DEBUG get_obrart() L175  Resultado da busca A Ronda Noturna, Rembrandt, 0 - call_trace=c:\env\app\app.py L175 
-[2023-09-14 20:10:45,200] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'A Ronda Noturna' + 'Rembrandt´ - call_trace=c:\env\app\app.py L186 
-[2023-09-14 20:10:45,218] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:10:45] "[33mGET /obrart?nome=A%20Ronda%20Noturna&artista=Rembrandt HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:15:18,363] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:15:18] "OPTIONS /obra?nome=A%20criança%20com%20a%20boneca&artista=Henri%20Rousseau HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:15:18,381] DEBUG del_obra() L132  Deletando dados sobre obra A criança com a boneca e artista Henri Rousseau - call_trace=c:\env\app\app.py L132 
-[2023-09-14 20:15:18,453] DEBUG del_obra() L142  Deletada obra A criança com a boneca e Henri Rousseau - call_trace=c:\env\app\app.py L142 
-[2023-09-14 20:15:18,460] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:15:18] "DELETE /obra?nome=A%20criança%20com%20a%20boneca&artista=Henri%20Rousseau HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:15:21,881] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:15:21] "OPTIONS /obra?nome=Gran%20profeta&artista=Pablo%20Gargallo HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:15:21,899] DEBUG del_obra() L132  Deletando dados sobre obra Gran profeta e artista Pablo Gargallo - call_trace=c:\env\app\app.py L132 
-[2023-09-14 20:15:21,942] DEBUG del_obra() L142  Deletada obra Gran profeta e Pablo Gargallo - call_trace=c:\env\app\app.py L142 
-[2023-09-14 20:15:21,947] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:15:21] "DELETE /obra?nome=Gran%20profeta&artista=Pablo%20Gargallo HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:16:30,111] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
-[2023-09-14 20:16:30,131] DEBUG get_obrart() L175  Resultado da busca A noite estrelada, Vincent van Gogh, 0 - call_trace=c:\env\app\app.py L175 
-[2023-09-14 20:16:30,136] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'A noite estrelada' + 'Vincent van Gogh´ - call_trace=c:\env\app\app.py L186 
-[2023-09-14 20:16:30,137] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:16:30] "[33mGET /obrart?nome=A%20noite%20estrelada&artista=Vincent%20van%20Gogh HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:18:07,103] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
-[2023-09-14 20:18:07,150] DEBUG get_obrart() L175  Resultado da busca Lied (Chanson), Vassily Kandinsky, 0 - call_trace=c:\env\app\app.py L175 
-[2023-09-14 20:18:07,165] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Lied (Chanson)' + 'Vassily Kandinsky´ - call_trace=c:\env\app\app.py L186 
-[2023-09-14 20:18:07,181] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:18:07] "[33mGET /obrart?nome=Lied%20(Chanson)&artista=Vassily%20Kandinsky HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:25:44,068] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
-[2023-09-14 20:25:44,168] DEBUG get_obrart() L175  Resultado da busca Almoço na relva, Claude Monet, 0 - call_trace=c:\env\app\app.py L175 
-[2023-09-14 20:25:44,184] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Almoço na relva' + 'Claude Monet´ - call_trace=c:\env\app\app.py L186 
-[2023-09-14 20:25:44,218] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 20:25:44] "[33mGET /obrart?nome=Almoço%20na%20relva&artista=Claude%20Monet HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-14 20:28:22,630] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
-[2023-09-14 20:28:22,672] DEBUG get_obrart() L175  Resultado da busca Monalisa, Leonardo da Vinci, 0 - call_trace=c:\env\app\app.py L175 
-[2023-09-14 20:28:22,698] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Monalisa' + 'Leonardo da Vinci´ - call_trace=c:\env\app\app.py L186 
-[2023-09-14 20:51:52,258] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
+[2023-09-15 18:57:08,640] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:18,268] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:18,315] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:25,764] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 18:57:25] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:26,487] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 18:57:26] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:26,533] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 18:57:26] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:26,553] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 18:57:26] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:27,203] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 18:57:27] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:27,311] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 18:57:27] "[36mGET /openapi/static/images/swagger.svg HTTP/1.1[0m" 304 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:33,017] DEBUG get_obrart() L168  *** Consultando Obra *** - call_trace=c:\env\app\app.py L168 
+[2023-09-15 18:57:33,148] DEBUG get_obrart() L173  Resultado da busca Monalisa, Leonardo da Vinci, 0 - call_trace=c:\env\app\app.py L173 
+[2023-09-15 18:57:33,169] WARNING get_obrart() L184  ´Erro: Obra + Artista não encontradados na base :/´ 'Monalisa' + 'Leonardo da Vinci´ - call_trace=c:\env\app\app.py L184 
+[2023-09-15 18:57:33,186] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 18:57:33] "[33mGET /obrart?nome=Monalisa&artista=Leonardo%20da%20Vinci HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 18:57:51,907] DEBUG get_obrart() L168  *** Consultando Obra *** - call_trace=c:\env\app\app.py L168 
+[2023-09-15 18:57:51,938] DEBUG get_obrart() L173  Resultado da busca Moacyr, Blondet, 1 - call_trace=c:\env\app\app.py L173 
+[2023-09-15 18:57:51,938] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 18:57:51] "GET /obrart?nome=Moacyr&artista=Blondet HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:06:36,810] DEBUG get_obrart() L168  *** Consultando Obra *** - call_trace=c:\env\app\app.py L168 
+[2023-09-15 19:06:37,008] DEBUG get_obrart() L173  Resultado da busca Moacyr, Blondet, 1 - call_trace=c:\env\app\app.py L173 
+[2023-09-15 19:06:37,056] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:06:37] "GET /obrart?nome=Moacyr&artista=Blondet HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:06:50,287] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:06:50] "OPTIONS /obra?nome=Moacyr&artista=Blondet HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:06:50,307] DEBUG del_obra() L132  Deletando dados sobre obra Moacyr e artista Blondet - call_trace=c:\env\app\app.py L132 
+[2023-09-15 19:06:50,418] DEBUG del_obra() L142  Deletada obra Moacyr e Blondet - call_trace=c:\env\app\app.py L142 
+[2023-09-15 19:06:50,429] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:06:50] "DELETE /obra?nome=Moacyr&artista=Blondet HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:07:21,511] DEBUG get_obrart() L168  *** Consultando Obra *** - call_trace=c:\env\app\app.py L168 
+[2023-09-15 19:07:21,526] DEBUG get_obrart() L173  Resultado da busca Quail and Millet, Kiyohara Yukinobu, 1 - call_trace=c:\env\app\app.py L173 
+[2023-09-15 19:07:21,539] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:07:21] "GET /obrart?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:07:28,973] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:07:28] "OPTIONS /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:07:28,990] DEBUG del_obra() L132  Deletando dados sobre obra Quail and Millet e artista Kiyohara Yukinobu - call_trace=c:\env\app\app.py L132 
+[2023-09-15 19:07:29,035] DEBUG del_obra() L142  Deletada obra Quail and Millet e Kiyohara Yukinobu - call_trace=c:\env\app\app.py L142 
+[2023-09-15 19:07:29,050] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:07:29] "DELETE /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:07:32,796] DEBUG get_obrart() L168  *** Consultando Obra *** - call_trace=c:\env\app\app.py L168 
+[2023-09-15 19:07:32,817] DEBUG get_obrart() L173  Resultado da busca Quail and Millet, Kiyohara Yukinobu, 0 - call_trace=c:\env\app\app.py L173 
+[2023-09-15 19:07:32,826] WARNING get_obrart() L184  ´Erro: Obra + Artista não encontradados na base :/´ 'Quail and Millet' + 'Kiyohara Yukinobu´ - call_trace=c:\env\app\app.py L184 
+[2023-09-15 19:07:32,842] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:07:32] "[33mGET /obrart?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:08:06,043] DEBUG add_obra() L61   Adicionando obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L61  
+[2023-09-15 19:08:06,188] DEBUG add_obra() L71   Adicionada obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L71  
+[2023-09-15 19:08:06,188] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:08:06] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:08:35,162] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:08:35] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:08:35,470] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:08:35] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:08:35,651] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:08:35] "[36mGET /openapi/static/js/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:08:35,652] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:08:35] "[36mGET /openapi/static/css/swagger-ui.css HTTP/1.1[0m" 304 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:08:35,662] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:08:35] "[36mGET /openapi/static/js/swagger-ui-bundle.js HTTP/1.1[0m" 304 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:08:36,207] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:08:36] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:09:57,556] INFO _log() L224   * Detected change in 'c:\\env\\app\\app.py', reloading - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:09:58,832] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:10:06,008] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:10:06,024] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:10:13,694] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:10:13] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-15 19:10:14,318] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 19:10:14] "GET /openapi/openapi.json HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 

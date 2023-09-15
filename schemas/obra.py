@@ -10,7 +10,7 @@ class ObraSchema(BaseModel):
     artista: str = "Leonardo da Vinci"
     estilo: str = "Renascimento"
     tipo: str = "Pintura"
-    link: str = "https://collections.louvre.fr/en/ark:/53355/cl010066723"
+    link: str = "https://images.metmuseum.org/CRDImages/dp/original/DP885496.jpg"
 
 
 class ObraBuscaSchema(BaseModel):
@@ -51,7 +51,7 @@ class ObraViewSchema(BaseModel):
     artista: str = "Leonardo da Vinci"
     estilo: str = "Renascimento"
     tipo: str = "Pintura"
-    link: str = "https://collections.louvre.fr/en/ark:/53355/cl010066723"
+    link: str = "https://images.metmuseum.org/CRDImages/dp/original/DP885496.jpg"
 
 class ObraDelSchema(BaseModel):
     """ Define como deve ser a estrutura do dado retornado após uma requisição
@@ -60,6 +60,14 @@ class ObraDelSchema(BaseModel):
     mesage: str
     nome: str
     artista: str
+
+class ObrartSchema(BaseModel):
+    """ Define como deve ser a estrutura do dado retornado após uma requisição
+        de remoção.
+    """
+    nome: str
+    artista: str
+    result: int
 
 def apresenta_obra(obra: Obra):
     """ Retorna uma representação da obra seguindo o schema definido em
