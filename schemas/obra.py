@@ -6,7 +6,7 @@ from model.obra import Obra
 class ObraSchema(BaseModel):
     """ Define como uma nova obra a ser inserida deve ser representada
     """
-    nome: str = "Mona Lisa"
+    nome: str = "Monalisa"
     artista: str = "Leonardo da Vinci"
     estilo: str = "Renascimento"
     tipo: str = "Pintura"
@@ -17,7 +17,7 @@ class ObraBuscaSchema(BaseModel):
     """ Define como deve ser a estrutura que representa a busca. Que será
         feita com base na obra e artista.
     """
-    nome: str = "Mona Lisa"
+    nome: str = "Monalisa"
     artista: str = "Leonardo da Vinci"
 
 
@@ -47,12 +47,11 @@ def apresenta_obras(obras: List[Obra]):
 class ObraViewSchema(BaseModel):
     """ Define como uma obra será retornada.
     """
-    nome: str = "Mona Lisa"
+    nome: str = "Monalisa"
     artista: str = "Leonardo da Vinci"
     estilo: str = "Renascimento"
     tipo: str = "Pintura"
     link: str = "https://collections.louvre.fr/en/ark:/53355/cl010066723"
-
 
 class ObraDelSchema(BaseModel):
     """ Define como deve ser a estrutura do dado retornado após uma requisição

@@ -1,56 +1,61 @@
-[2023-09-05 21:30:06,228] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[2023-09-14 18:11:49,498] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:30:06,261] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:30:06,298] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:30:41,719] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:30:42,197] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:30:56,005] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
-[2023-09-05 21:30:56,454] DEBUG get_obras() L113  9 obras econtradas - call_trace=c:\env\app\app.py L113 
-[2023-09-05 21:30:56,609] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:30:56] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:31:33,244] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
-[2023-09-05 21:31:33,942] DEBUG get_obrart() L166  Monalisa, Leonardo da Vinci, 1 - call_trace=c:\env\app\app.py L166 
-[2023-09-05 21:31:34,019] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:34] "GET /obrart?obra_nome=Monalisa&obra_artista=Leonardo%20da%20Vinci HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:31:52,013] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
-[2023-09-05 21:31:52,080] DEBUG get_obrart() L166  Teste1, Leonardo da Vinci, 0 - call_trace=c:\env\app\app.py L166 
-[2023-09-05 21:31:52,093] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:52] "GET /obrart?obra_nome=Teste1&obra_artista=Leonardo%20da%20Vinci HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:31:54,730] DEBUG add_obra() L60   Adicionando obra de nome: 'Teste1' e artista 'Leonardo da Vinci' - call_trace=c:\env\app\app.py L60  
-[2023-09-05 21:31:55,032] DEBUG add_obra() L70   Adicionada obra de nome: 'Teste1' e artista 'Leonardo da Vinci' - call_trace=c:\env\app\app.py L70  
-[2023-09-05 21:31:55,046] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:55] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:31:56,406] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
-[2023-09-05 21:31:56,443] DEBUG get_obras() L113  10 obras econtradas - call_trace=c:\env\app\app.py L113 
-[2023-09-05 21:31:56,474] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:31:56] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:32:17,557] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
-[2023-09-05 21:32:17,620] DEBUG get_obrart() L166  Teste1, Teste2, 0 - call_trace=c:\env\app\app.py L166 
-[2023-09-05 21:32:17,630] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:32:17] "GET /obrart?obra_nome=Teste1&obra_artista=Teste2 HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:32:19,287] DEBUG add_obra() L60   Adicionando obra de nome: 'Teste1' e artista 'Teste2' - call_trace=c:\env\app\app.py L60  
-[2023-09-05 21:32:19,376] DEBUG add_obra() L70   Adicionada obra de nome: 'Teste1' e artista 'Teste2' - call_trace=c:\env\app\app.py L70  
-[2023-09-05 21:32:19,394] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:32:19] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:32:21,223] DEBUG get_obras() L101  Coletando obras  - call_trace=c:\env\app\app.py L101 
-[2023-09-05 21:32:21,236] DEBUG get_obras() L113  11 obras econtradas - call_trace=c:\env\app\app.py L113 
-[2023-09-05 21:32:21,299] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:32:21] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:33:52,881] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
-[2023-09-05 21:33:53,128] DEBUG get_obrart() L166  Teste1, Teste2, 1 - call_trace=c:\env\app\app.py L166 
-[2023-09-05 21:33:53,165] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:33:53] "GET /obrart?obra_nome=Teste1&obra_artista=Teste2 HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:11,752] DEBUG get_obrart() L161  *** Coletando obras *** - call_trace=c:\env\app\app.py L161 
-[2023-09-05 21:34:11,801] DEBUG get_obrart() L166  Teste1, Teste2, 1 - call_trace=c:\env\app\app.py L166 
-[2023-09-05 21:34:11,812] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:11] "GET /obrart?obra_nome=Teste1&obra_artista=Teste2 HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:19,516] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:19] "OPTIONS /obra?nome=Teste1&artista=Teste2 HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:19,669] DEBUG del_obra() L131  Deletando dados sobre obra Teste1 e artista Teste2 - call_trace=c:\env\app\app.py L131 
-[2023-09-05 21:34:19,822] DEBUG del_obra() L141  Deletada obra Teste1 e Teste2 - call_trace=c:\env\app\app.py L141 
-[2023-09-05 21:34:19,829] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:19] "DELETE /obra?nome=Teste1&artista=Teste2 HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:22,481] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:22] "OPTIONS /obra?nome=Teste1&artista=Leonardo%20da%20Vinci HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:22,502] DEBUG del_obra() L131  Deletando dados sobre obra Teste1 e artista Leonardo da Vinci - call_trace=c:\env\app\app.py L131 
-[2023-09-05 21:34:22,544] DEBUG del_obra() L141  Deletada obra Teste1 e Leonardo da Vinci - call_trace=c:\env\app\app.py L141 
-[2023-09-05 21:34:22,550] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:22] "DELETE /obra?nome=Teste1&artista=Leonardo%20da%20Vinci HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:25,797] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:25] "OPTIONS /obra?nome=Monalisa&artista=Leonardo%20da%20Vinci HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:25,814] DEBUG del_obra() L131  Deletando dados sobre obra Monalisa e artista Leonardo da Vinci - call_trace=c:\env\app\app.py L131 
-[2023-09-05 21:34:25,850] DEBUG del_obra() L141  Deletada obra Monalisa e Leonardo da Vinci - call_trace=c:\env\app\app.py L141 
-[2023-09-05 21:34:25,863] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:25] "DELETE /obra?nome=Monalisa&artista=Leonardo%20da%20Vinci HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:29,563] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:29] "OPTIONS /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:29,589] DEBUG del_obra() L131  Deletando dados sobre obra Quail and Millet e artista Kiyohara Yukinobu - call_trace=c:\env\app\app.py L131 
-[2023-09-05 21:34:29,619] DEBUG del_obra() L141  Deletada obra Quail and Millet e Kiyohara Yukinobu - call_trace=c:\env\app\app.py L141 
-[2023-09-05 21:34:29,633] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:29] "DELETE /obra?nome=Quail%20and%20Millet&artista=Kiyohara%20Yukinobu HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:38,845] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:38] "OPTIONS /obra?nome=Teste1&artista=Teste2 HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
-[2023-09-05 21:34:38,873] DEBUG del_obra() L131  Deletando dados sobre obra Teste1 e artista Teste2 - call_trace=c:\env\app\app.py L131 
-[2023-09-05 21:34:38,909] WARNING del_obra() L146  Erro ao deletar obra 'Teste1' e artista 'Teste2', Obra não encontrada na base :/ - call_trace=c:\env\app\app.py L146 
-[2023-09-05 21:34:38,930] INFO _log() L224  127.0.0.1 - - [05/Sep/2023 21:34:38] "[33mDELETE /obra?nome=Teste1&artista=Teste2 HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:11:49,516] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:11:49,516] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:11:52,863] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:11:52,877] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:12:01,124] DEBUG get_obras() L102  Coletando obras  - call_trace=c:\env\app\app.py L102 
+[2023-09-14 18:12:01,163] DEBUG get_obras() L111  Não há obras na base - call_trace=c:\env\app\app.py L111 
+[2023-09-14 18:12:01,172] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:12:01] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:12:14,230] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
+[2023-09-14 18:12:14,281] DEBUG get_obrart() L175  Resultado da busca Teste1, Teste, 0 - call_trace=c:\env\app\app.py L175 
+[2023-09-14 18:12:14,285] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Teste1' + 'Teste´ - call_trace=c:\env\app\app.py L186 
+[2023-09-14 18:12:14,299] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:12:14] "[33mGET /obrart?nome=Teste1&artista=Teste HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:12:14,373] DEBUG add_obra() L61   Adicionando obra de nome: 'Teste1' e artista 'Teste' - call_trace=c:\env\app\app.py L61  
+[2023-09-14 18:12:14,414] DEBUG add_obra() L71   Adicionada obra de nome: 'Teste1' e artista 'Teste' - call_trace=c:\env\app\app.py L71  
+[2023-09-14 18:12:14,429] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:12:14] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:12:30,390] DEBUG get_obras() L102  Coletando obras  - call_trace=c:\env\app\app.py L102 
+[2023-09-14 18:12:30,406] DEBUG get_obras() L114  1 obras econtradas - call_trace=c:\env\app\app.py L114 
+[2023-09-14 18:12:30,421] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:12:30] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:12:32,726] DEBUG get_obras() L102  Coletando obras  - call_trace=c:\env\app\app.py L102 
+[2023-09-14 18:12:32,750] DEBUG get_obras() L114  1 obras econtradas - call_trace=c:\env\app\app.py L114 
+[2023-09-14 18:12:32,766] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:12:32] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:16:17,659] DEBUG get_obras() L102  Coletando obras  - call_trace=c:\env\app\app.py L102 
+[2023-09-14 18:16:17,767] DEBUG get_obras() L114  1 obras econtradas - call_trace=c:\env\app\app.py L114 
+[2023-09-14 18:16:17,792] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:16:17] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:17:56,826] DEBUG get_obras() L102  Coletando obras  - call_trace=c:\env\app\app.py L102 
+[2023-09-14 18:17:56,856] DEBUG get_obras() L114  1 obras econtradas - call_trace=c:\env\app\app.py L114 
+[2023-09-14 18:17:56,926] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:17:56] "GET /obras HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:18:16,358] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
+[2023-09-14 18:18:16,416] DEBUG get_obrart() L175  Resultado da busca Teste2, Teste, 0 - call_trace=c:\env\app\app.py L175 
+[2023-09-14 18:18:16,416] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Teste2' + 'Teste´ - call_trace=c:\env\app\app.py L186 
+[2023-09-14 18:18:16,448] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:18:16] "[33mGET /obrart?nome=Teste2&artista=Teste HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:18:16,551] DEBUG add_obra() L61   Adicionando obra de nome: 'Teste2' e artista 'Teste' - call_trace=c:\env\app\app.py L61  
+[2023-09-14 18:18:16,598] DEBUG add_obra() L71   Adicionada obra de nome: 'Teste2' e artista 'Teste' - call_trace=c:\env\app\app.py L71  
+[2023-09-14 18:18:16,614] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:18:16] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:18:24,941] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:18:24] "OPTIONS /obra?nome=Teste1&artista=Teste HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:18:24,961] DEBUG del_obra() L132  Deletando dados sobre obra Teste1 e artista Teste - call_trace=c:\env\app\app.py L132 
+[2023-09-14 18:18:25,074] DEBUG del_obra() L142  Deletada obra Teste1 e Teste - call_trace=c:\env\app\app.py L142 
+[2023-09-14 18:18:25,078] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:18:25] "DELETE /obra?nome=Teste1&artista=Teste HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:18:53,078] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:18:53] "OPTIONS /obra?nome=Teste2&artista=Teste HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:18:53,095] DEBUG del_obra() L132  Deletando dados sobre obra Teste2 e artista Teste - call_trace=c:\env\app\app.py L132 
+[2023-09-14 18:18:53,118] DEBUG del_obra() L142  Deletada obra Teste2 e Teste - call_trace=c:\env\app\app.py L142 
+[2023-09-14 18:18:53,123] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:18:53] "DELETE /obra?nome=Teste2&artista=Teste HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:19:09,827] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
+[2023-09-14 18:19:09,845] DEBUG get_obrart() L175  Resultado da busca Teste1, Teste, 0 - call_trace=c:\env\app\app.py L175 
+[2023-09-14 18:19:09,851] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Teste1' + 'Teste´ - call_trace=c:\env\app\app.py L186 
+[2023-09-14 18:19:09,853] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:19:09] "[33mGET /obrart?nome=Teste1&artista=Teste HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:19:09,906] DEBUG add_obra() L61   Adicionando obra de nome: 'Teste1' e artista 'Teste' - call_trace=c:\env\app\app.py L61  
+[2023-09-14 18:19:09,938] DEBUG add_obra() L71   Adicionada obra de nome: 'Teste1' e artista 'Teste' - call_trace=c:\env\app\app.py L71  
+[2023-09-14 18:19:09,938] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:19:09] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:19:29,943] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
+[2023-09-14 18:19:29,965] DEBUG get_obrart() L175  Resultado da busca Teste2, Teste, 0 - call_trace=c:\env\app\app.py L175 
+[2023-09-14 18:19:29,965] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Teste2' + 'Teste´ - call_trace=c:\env\app\app.py L186 
+[2023-09-14 18:19:29,977] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:19:29] "[33mGET /obrart?nome=Teste2&artista=Teste HTTP/1.1[0m" 404 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:19:30,023] DEBUG add_obra() L61   Adicionando obra de nome: 'Teste2' e artista 'Teste' - call_trace=c:\env\app\app.py L61  
+[2023-09-14 18:19:30,040] DEBUG add_obra() L71   Adicionada obra de nome: 'Teste2' e artista 'Teste' - call_trace=c:\env\app\app.py L71  
+[2023-09-14 18:19:30,044] INFO _log() L224  127.0.0.1 - - [14/Sep/2023 18:19:30] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-14 18:19:46,498] DEBUG get_obrart() L170  *** Consultando Obra *** - call_trace=c:\env\app\app.py L170 
+[2023-09-14 18:19:46,508] DEBUG get_obrart() L175  Resultado da busca Teste3, Teste, 0 - call_trace=c:\env\app\app.py L175 
+[2023-09-14 18:19:46,508] WARNING get_obrart() L186  ´Erro: Obra + Artista não encontradados na base :/´ 'Teste3' + 'Teste´ - call_trace=c:\env\app\app.py L186 
+[2023-09-14 18:19:46,704] DEBUG add_obra() L61   Adicionando obra de nome: 'Teste3' e artista 'Teste' - call_trace=c:\env\app\app.py L61  

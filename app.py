@@ -23,13 +23,14 @@ logger = setup_logger(service_name)
 """ Informações de identificação, acesso e documentação do serviço
 """
 #  =====================================================================================
-info = Info(title="Obras de Arte", version="1.0.0")
+info = Info(title="API app - BD de Obras de Arte", version="1.0.1")
 app = OpenAPI(__name__, info=info)
 CORS(app)
 
 # Definindo tags
-home_tag = Tag(name="Documentação", description="Documentação via Swagger.")
-obra_tag = Tag(name="Obra", description="Adição, visualização e remoção de obras da base")
+home_tag = Tag(name="Documentação", description="Apresentação da documentação via Swagger.")
+obra_tag = Tag(name="Rotas em app", description="Deleção, Adição, Consulta e Busca de obras da base")
+error_code = 0
 
 # ========================================================================================
 """ Rota /openapi para geração da documentação via Swagger
@@ -142,30 +143,50 @@ def del_obra(query: ObraBuscaSchema):
         return {"mesage": "Obra removida", "nome": obra_nome, "artista" : obra_artista}
     else:
         # Se a obra não foi encontrada
-        error_msg = "Obra não encontrada na base :/"
+        error_msg = "Erro: Obra + Artista não encontradados na base :/"
+        error_code = "404"
         logger.warning(f"Erro ao deletar obra '{obra_nome}' e artista '{obra_artista}', {error_msg}")
-        return {"mesage": error_msg}, 404
+        return {"mesage": error_msg}, error_code
 
 # ========================================================================================
 """ Rota /obrart para tratar o fetch do script.js para consulta obra + artista.
     2ª Regra de negócio (RN2) para evitar tupla com obra + artista repetida
 """
 # ========================================================================================
-@app.get('/obrart', methods=['GET'], tags=[obra_tag])
+@app.get('/obrart', methods=['GET'], tags=[obra_tag],
+            responses={"200": ObraDelSchema, "404": ErrorSchema})
 
-def get_obrart():
+#@app.get('/obrart', methods=['GET'], tags=[obra_tag])
+#def get_obrart():
+def get_obrart(query: ObraBuscaSchema):
+    """Consulta uma obra na base de dados.
+    """
+    #> obra_nome = request.args.get('obra_nome')
+    #> obra_artista = request.args.get('obra_artista')
 
-    obra_nome = request.args.get('obra_nome')
-    obra_artista = request.args.get('obra_artista')
+    obra_nome = request.args.get('nome')
+    obra_artista = request.args.get('artista')
 
-    logger.debug(f"*** Coletando obras ***")
+    logger.debug(f"*** Consultando Obra ***")
     # Criando conexão com a base
     session = Session()
     # Fazendo a busca 
     result = session.query(func.count(Obra.artista)).filter(Obra.artista == obra_artista, Obra.nome == obra_nome).scalar()
-    logger.debug(f"{obra_nome}, {obra_artista}, {result}")
+    logger.debug(f"Resultado da busca {obra_nome}, {obra_artista}, {result}")
+    session.commit()
 
-    return jsonify(obra_nome, obra_artista, result)
+    if result:
+        # Retorna o resultado da busca com "result" com o número de ocorrências
+        return jsonify(obra_nome, obra_artista, result)
+    
+    else:
+        # Se a obra não foi encontrada
+        error_msg = "Erro: Obra + Artista não encontradados na base :/"
+        error_code = "404"
+        logger.warning(f"´{error_msg}´ '{obra_nome}' + '{obra_artista}´")
+        
+        return jsonify(obra_nome, obra_artista, result), 404
+        #return {"mesage": error_msg}, error_code
 
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
