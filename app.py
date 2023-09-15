@@ -159,9 +159,6 @@ def del_obra(query: ObraBuscaSchema):
 def get_obrart(query: ObraBuscaSchema):
     """Verifica  se a compinação Obra + Artista existe na base de dados.
     """
-    #> obra_nome = request.args.get('obra_nome')
-    #> obra_artista = request.args.get('obra_artista')
-
     obra_nome = request.args.get('nome')
     obra_artista = request.args.get('artista')
 
