@@ -45,3 +45,10 @@
 [2023-09-15 22:00:59,756] DEBUG add_obra() L61   Adicionando obra de nome: 'Sunflowers' e artista 'Vincent van Gogh' - call_trace=c:\env\app\app.py L61  
 [2023-09-15 22:00:59,960] DEBUG add_obra() L71   Adicionada obra de nome: 'Sunflowers' e artista 'Vincent van Gogh' - call_trace=c:\env\app\app.py L71  
 [2023-09-15 22:00:59,976] INFO _log() L224  127.0.0.1 - - [15/Sep/2023 22:00:59] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-17 15:16:21,558] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-17 15:16:21,565] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-17 15:16:21,584] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-17 15:16:27,106] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-17 15:16:27,108] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-17 15:17:22,965] DEBUG del_obra() L132  Deletando dados sobre obra Monalisa e artista Leonardo da Vinci - call_trace=c:\env\app\app.py L132 
