@@ -1,3 +1,7 @@
+# =============================================================================
+""" 1 - Carga Inicial.
+"""
+# =============================================================================
 from flask_openapi3 import OpenAPI, Info, Tag
 from flask import redirect, request
 from urllib.parse import unquote
@@ -12,38 +16,61 @@ from flask_cors import CORS
 
 from logger import setup_logger
 
-# ======================================================================================
-""" Inicializa service_name com o nome exclusivo do serviço para geração de log
-""" 
-# ======================================================================================
+# ===============================================================================
+""" 2 - Inicializa variáveis de Informações gerais de identificação do serviço.
+"""
+#  ==============================================================================
+info = Info(title="API Obras de Arte", version="1.0.1")
+app = OpenAPI(__name__, info=info)
+
+home_tag = Tag(name="Documentação", description="Apresentação da documentação via Swagger.")
+obra_tag = Tag(name="Rotas em app", description="Deleção, Adição, Consulta e Busca de obras da base")
+doc_tag = Tag(name="Rota em app", description="Documentação da API de manipulação da BD Obras de Arte")
+
+# ==============================================================================
+""" 3 - Inicializa "service_name" para fins de geração de arquivo de log.
+"""
+# ==============================================================================
 service_name = "app"
 logger = setup_logger(service_name)
 
-# ======================================================================================
-""" Informações de identificação, acesso e documentação do serviço
+# ==============================================================================
+""" 4 - Configurações de "Cross-Origin Resource Sharing" (CORS).
+# Foi colocado "supports_credentials=False" para evitar possíveis conflitos com
+# algum tipo de configuração de browser. Mas não é a melhor recomendação por 
+# segurança. Para melhorar a segurança desta API, o mais indicado segue nas 
+# linhas abaixo comentadas.
+#> origins_permitidas = ["Obras de Arte"]
+#> Configurando o CORS com suporte a credenciais
+#> CORS(app, origins=origins_permitidas, supports_credentials=True)
+#> CORS(app, supports_credentials=True, expose_headers=["Authorization"])
+#> Adicionalmente utilizar da biblioteca PyJWT
 """
-#  =====================================================================================
-info = Info(title="API Obras de Arte", version="1.0.1")
-app = OpenAPI(__name__, info=info)
-CORS(app)
+# ==============================================================================
+CORS(app, supports_credentials=False)
 
-# Definindo tags
-home_tag = Tag(name="Documentação", description="Apresentação da documentação via Swagger.")
-obra_tag = Tag(name="Rotas em app", description="Deleção, Adição, Consulta e Busca de obras da base")
-error_code = 0
-
-# ========================================================================================
-""" Rota /openapi para geração da documentação via Swagger
+# ================================================================================
+""" 5.1 - DOCUMENTAÇÂO: Rota "/" para geração da documentação via Swagger.
 """
-# ========================================================================================
+# ================================================================================
 @app.get('/', tags=[home_tag])
 def home():
     """Redireciona para /openapi/swagger.
     """
     return redirect('/openapi/swagger')
 
+# ================================================================================
+""" 5.2 - DOCUMENTAÇÂO: Rota "/doc" para documentação via github.
+"""
+# ================================================================================
+@app.get('/doc', tags=[doc_tag])
+def doc():
+    """Redireciona para documentação no github.
+    """
+    return redirect('https://github.com/Moriblo/app')
+
 # ========================================================================================
-""" Rota /obra para tratar o fetch de `POST` do script.js.
+""" 6.1 - Rota /obra para tratar o fetch de `POST`.
 """
 # ========================================================================================
 @app.post('/obra', tags=[obra_tag],
@@ -91,7 +118,7 @@ def add_obra(form: ObraSchema):
         session.close()
 
 # ========================================================================================
-""" Rota /obras para tratar o fetch de `GET` do script.js para função getList().
+""" 6.2 - Rota /obras para tratar o fetch de `GET`.
 """
 # ========================================================================================
 @app.get('/obras', tags=[obra_tag],
@@ -117,7 +144,7 @@ def get_obras():
         return apresenta_obras(obras), 200
     
 # ========================================================================================
-""" Rota /obra para tratar o fetch de `DELETE` do script.js.
+""" 6.3 - Rota /obra para tratar o fetch de `DELETE`.
 """
 # ========================================================================================
 @app.delete('/obra', tags=[obra_tag],
@@ -149,7 +176,7 @@ def del_obra(query: ObraBuscaSchema):
         return {"mesage": error_msg}, error_code
 
 # ========================================================================================
-""" Rota /obrart para tratar o fetch do script.js para consulta obra + artista.
+""" 6.4 - Rota /obrart para tratar o fetch de GET para consulta obra + artista.
     2ª Regra de negócio (RN2) para evitar tupla com obra + artista repetida
 """
 # ========================================================================================
@@ -182,5 +209,9 @@ def get_obrart(query: ObraBuscaSchema):
         
         return jsonify(obra_nome, obra_artista, result), 404
 
+# ===============================================================================
+""" 7 - Garante a disponibilidade da API em "suspenso".
+"""
+# ===============================================================================
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
