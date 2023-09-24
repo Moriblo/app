@@ -16,4 +16,4 @@ Detalhamento dos requisitos (REQ) do MVP e demais issues tratados:
 * REQ_A :: Requisitos do Front
 * REQ_B1 :: Requisitos da API Tradutor (tradutor.py)
 * REQ_B2 :: Requisitos da API Search in Museum (smuseum.py)
-* REQ_C :: Requisitos da API Obras de Arte (app.py)
+* __ REQ_C :: Requisitos da API Obras de Arte (app.py) __
