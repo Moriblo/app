@@ -13,7 +13,7 @@ Estrutura do código da API e chamadas.
 
 Detalhamento dos requisitos (REQ) do MVP e demais issues tratados:
 
-[https://github.com/users/Moriblo/projects/2/views/7]
+### [Link para os Issues do Projeto](https://github.com/users/Moriblo/projects/2/views/5)
 
 > [!NOTE]
 > * REQ_A :: Requisitos do Front
