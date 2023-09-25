@@ -1,6 +1,5 @@
-# [Projeto Obras de Arte](https://github.com/Moriblo)
+# <a href="https://github.com/Moriblo"><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f519.png" width="20" height="20"></a> API_C Obras de Arte [app.py]
 
-## API_C Obras de Arte [app.py]
 API_C do MVP da Sprint 3 do curso de pós gradução em Engenharia de Software da PUC.
 Trata-se de uma API para manipulação de uma base SQLite, onde estarão armazenados os dados referentes a obras de arte (Nome,   Artista, Estilo de Época, Tipo e Link). Também está sendo salvo, automaticamente na base, a data e a hora da inserção da tupla.
 
