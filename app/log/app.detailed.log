@@ -43,3 +43,12 @@
 [2023-09-23 02:49:18,038] DEBUG add_obra() L88   Adicionando obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L88  
 [2023-09-23 02:49:18,304] DEBUG add_obra() L98   Adicionada obra de nome: 'Quail and Millet' e artista 'Kiyohara Yukinobu' - call_trace=c:\env\app\app.py L98  
 [2023-09-23 02:49:18,324] INFO _log() L224  127.0.0.1 - - [23/Sep/2023 02:49:18] "POST /obra HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-24 13:19:29,933] INFO _log() L224  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-24 13:19:29,956] INFO _log() L224  [33mPress CTRL+C to quit[0m - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-24 13:19:30,015] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-24 13:19:48,559] WARNING _log() L224   * Debugger is active! - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-24 13:19:48,588] INFO _log() L224   * Debugger PIN: 118-637-333 - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-24 13:22:00,041] INFO _log() L224  127.0.0.1 - - [24/Sep/2023 13:22:00] "[32mGET / HTTP/1.1[0m" 302 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-24 13:22:00,164] INFO _log() L224  127.0.0.1 - - [24/Sep/2023 13:22:00] "GET /openapi/swagger HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
+[2023-09-24 13:22:00,534] INFO _log() L224  127.0.0.1 - - [24/Sep/2023 13:22:00] "GET /openapi/static/css/swagger-ui.css HTTP/1.1" 200 - - call_trace=C:\Users\moacy\AppData\Local\Programs\Python\Python311\Lib\site-packages\werkzeug\_internal.py L224 
